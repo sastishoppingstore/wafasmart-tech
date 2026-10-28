@@ -98,19 +98,20 @@ const PRIVACY_SVG = `<p class="privacy"><svg viewBox="0 0 24 24" aria-hidden="tr
 /* ---------- docs block (unique content below the tool) ---------- */
 function docsBlock(t) {
   return `<section class="t-docs">
+<div class="t-hero-img"><img src="/tools/assets/img/tool-${t.cat === 'pdf' ? 'pdf' : t.cat === 'calc' ? 'calc' : t.cat === 'text' ? 'text' : 'image-compress'}.jpg" alt="${esc(t.name)} - 3D animated tool interface" loading="lazy" decoding="async"></div>
 <h2 id="about">What this tool does</h2>
 ${t.intro.map(p => `<p>${esc(p)}</p>`).join("\n")}
-<h2 id="how-to-use">How to use the ${esc(t.name)}</h2>
-<ol>${t.steps.map(s => `<li>${esc(s)}</li>`).join("")}</ol>
+<h2 id="how-to-use">How to use the ${esc(t.name)} <span style="color:var(--cy)">| Step by Step Guide</span></h2>
+<div class="howto"><ol>${t.steps.map(s => `<li><span>${esc(s)}</span></li>`).join("")}</ol></div>
 <span class="ru" data-ru lang="ros">${esc(t.ur)}</span>
 <h2 id="features">Features</h2>
-<ul>${t.features.map(s => `<li>${esc(s)}</li>`).join("")}</ul>
+<ul class="feat-list">${t.features.map(s => `<li>${esc(s)}</li>`).join("")}</ul>
 <h2 id="tips">Tips</h2>
 <ul>${t.tips.map(s => `<li>${esc(s)}</li>`).join("")}</ul>
 <h2 id="faq">Frequently asked questions</h2>
 ${t.faqs.map(f => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join("\n")}
-<h2 id="related">Related tools</h2>
-<p class="related">${t.related.map(([sl, lb]) => `<a href="/tools/${sl === "index" ? "index.html" : sl + ".html"}">${esc(lb)}</a>`).join("")}</p>
+<h2 id="related">Related tools <span style="color:var(--cy)">— Try more free tools</span></h2>
+<div class="related-grid">${t.related.map(([sl, lb]) => `<a class="rel-card" href="/tools/${sl === "index" ? "index.html" : sl + ".html"}"><span class="rel-ic">⚡</span><span><b>${esc(lb)}</b><small>Open this 3D animated tool</small></span></a>`).join("")}</div>
 ${PRIVACY_SVG}
 </section>`;
 }

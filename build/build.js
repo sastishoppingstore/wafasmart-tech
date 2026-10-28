@@ -110,7 +110,7 @@ ${jsonld.map(j => `<script type="application/ld+json">${JSON.stringify(j)}</scri
 }
 
 function nav(active) {
-  const L = [["home", "Home", "ہوم", "/index.html"], ["services", "Services", "سروسز", "/services.html"], ["pricing", "Pricing", "قیمتیں", "/pricing.html"], ["portfolio", "Portfolio", "نمونے", "/portfolio.html"], ["about", "About", "ہمارے بارے میں", "/about.html"], ["blog", "Blog", "بلاگ", "/blog.html"], ["contact", "Contact", "رابطہ", "/contact.html"]];
+  const L = [["home", "Home", "ہوم", "/index.html"], ["services", "Services", "سروسز", "/services.html"], ["pricing", "Pricing", "قیمتیں", "/pricing.html"], ["portfolio", "Portfolio", "نمونے", "/portfolio.html"], ["about", "About", "ہمارے بارے میں", "/about.html"], ["blog", "Blog", "بلاگ", "/blog.html"], ["tools", "Free Tools", "فری ٹولز", "/tools/index.html"], ["contact", "Contact", "رابطہ", "/contact.html"]];
   return `<div class="progress" aria-hidden="true"></div>
 <header class="hdr"><nav class="nav" aria-label="Main">
 <a class="logo" href="/index.html" aria-label="${escA(S.brand.name)} home"><img src="/assets/img/logo.webp" alt="${escA(S.brand.name)} logo" width="42" height="42" fetchpriority="high"><span>WAFA<i class="dot">.</i><span class="grad-txt logo-more">SMART</span><span class="logo-more">TECH</span></span></a>
@@ -129,7 +129,7 @@ function footer() {
   <div class="pill-row"><span class="pill pill-free">${svg("check",12)} <span data-i18n="badge.domain">Domain FREE on sites</span></span><span class="pill pill-demo">${svg("spark",12)} <span data-i18n="badge.demos">3 Demo Designs</span></span></div></div>
   <div><h4 data-i18n="nav.services">Services</h4><ul>${S.services.slice(0, 8).map(s => `<li><a href="/${s.slug}.html" data-ur="${escA(s.nameUr)}">${esc(s.name)}</a></li>`).join("")}<li><a class="rec-link" href="/recovery.html">Hacked? Emergency recovery</a></li><li><a href="/services.html">+ ${S.services.length - 8} more build services →</a></li></ul></div>
   <div><h4>Company</h4><ul>
-    <li><a href="/about.html" data-i18n="nav.about">About</a></li><li><a href="/pricing.html" data-i18n="nav.pricing">Pricing</a></li><li><a href="/portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li><li><a href="/blog.html" data-i18n="nav.blog">Blog</a></li><li><a href="/contact.html" data-i18n="nav.contact">Contact</a></li><li><a href="/admin.html">Admin panel</a></li></ul></div>
+    <li><a href="/about.html" data-i18n="nav.about">About</a></li><li><a href="/pricing.html" data-i18n="nav.pricing">Pricing</a></li><li><a href="/portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li><li><a href="/blog.html" data-i18n="nav.blog">Blog</a></li><li><a href="/tools/index.html">Free Tools</a></li><li><a href="/contact.html" data-i18n="nav.contact">Contact</a></li><li><a href="/admin.html">Admin panel</a></li></ul></div>
   <div><h4 data-i18n="nav.contact">Contact</h4><ul>
     <li><a href="${wa("Assalam o Alaikum!")}"><b>${svg("wa", 15)}</b> <span class="ltr" data-wk="contact.whatsappDisplay">${esc(S.contact.whatsappDisplay)}</span> <span class="tiny muted" data-wk="contact.hours">${esc(S.contact.hours)}</span></a></li>
     <li><a href="tel:+${escA(S.contact.whatsapp)}">${svg("phone", 15)} <span class="ltr" data-wk="contact.phoneRaw">${esc(S.contact.phoneRaw)}</span></a></li>

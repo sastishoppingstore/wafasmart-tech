@@ -8,7 +8,7 @@
   "use strict";
   const UR = {
     "nav.home": "ہوم", "nav.services": "سروسز", "nav.pricing": "قیمتیں", "nav.portfolio": "نمونے",
-    "nav.about": "ہمارے بارے میں", "nav.blog": "بلاگ", "nav.contact": "رابطہ",
+    "nav.about": "ہمارے بارے میں", "nav.blog": "بلاگ", "nav.tools": "فری ٹولز", "nav.contact": "رابطہ",
     "cta.quote": "مفت کوٹ", "cta.demo": "مفت ڈیمو", "cta.order": "ابھی آرڈر کریں", "cta.wa": "واٹس ایپ", "cta.free": "فری مشاورت", "cta.recover": "ابھی ریکوری",
     "cta.viewsvc": "سروس دیکھیں", "cta.viewall": "سب سروسز دیکھیں", "cta.details": "تفصیل",
     "sec.services": "ہماری سروسز", "sec.services.sub": "اکیس سروسز — صاف مقررہ ریٹ، مکمل تفصیل، آرڈر اور کوٹ بٹن کے ساتھ",
