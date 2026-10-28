@@ -310,8 +310,53 @@ module.exports = {
       ],
       "built": false
     }
+  ,
+    {
+      "slug": "image-size-adjuster",
+      "cat": "image",
+      "name": "Image Size Adjuster (KB + Pixels)",
+      "libs": ["heic2any", "jszip"],
+      "kw": ["resize image to kb", "compress image to 100kb", "resize image to 800x800", "image size reducer", "custom image resizer"],
+      "built": false
+    },
+    {
+      "slug": "resize-compress-image",
+      "cat": "image",
+      "name": "Resize & Compress Image",
+      "libs": ["heic2any", "jszip"],
+      "kw": ["resize image to kb", "compress image to 100kb", "resize image to 800x800"],
+      "built": false
+    },
+    {
+      "slug": "gym-calculator",
+      "cat": "calc",
+      "name": "Gym Calculator (BMI, BMR, TDEE, Macros, 1RM)",
+      "kw": ["gym calculator", "bmi calculator", "tdee calculator", "bmr calculator", "1 rep max calculator"],
+      "built": false
+    },
+    {
+      "slug": "age-calculator",
+      "cat": "calc",
+      "name": "Age Calculator - Gregorian, Hijri, Desi",
+      "kw": ["age calculator by date of birth", "hijri age calculator", "desi age calculator"],
+      "built": false
+    },
+    {
+      "slug": "zakat-calculator",
+      "cat": "calc",
+      "name": "Zakat Calculator - Gold/Silver Nisab",
+      "kw": ["zakat calculator", "zakat calculator pakistan", "nisab calculator"],
+      "built": false
+    },
+    {
+      "slug": "khums-calculator",
+      "cat": "calc",
+      "name": "Khums Calculator - Shia",
+      "kw": ["khums calculator", "khums calculator shia", "sahm e imam"],
+      "built": false
+    },
   ],
-  "HUB": {
+"HUB": {
     "title": "Free Online Tools — Image, PDF, Calculators | Wafa Smart",
     "desc": "36 free browser tools: compress image to 50KB, image to PDF, QR codes, BMI, zakat, age and more. No uploads — files never leave your device.",
     "h1": "Free Online Tools — no uploads, no sign-up",

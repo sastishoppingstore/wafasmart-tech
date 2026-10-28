@@ -1,69 +1,37 @@
-/* age-calculator — exact age, totals, weekday born, next-birthday countdown. All local, UTC-safe. */
-(function () {
-  "use strict";
-  const T = window.WST_T; if (!T) return;
-  const $ = T.$;
-  const card = $(".t-card.opts"), out = $("#out");
-
-  function parts(val) { // val = "YYYY-MM-DD"
-    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(val || "");
-    if (!m) return null;
-    const y = +m[1], mo = +m[2], d = +m[3];
-    if (mo < 1 || mo > 12 || d < 1 || d > 31) return null;
-    const dd = new Date(Date.UTC(y, mo - 1, d));
-    if (dd.getUTCFullYear() !== y || dd.getUTCMonth() + 1 !== mo || dd.getUTCDate() !== d) return null; // rejects 2 Feb 30 etc
-    return { y, m: mo, d, utc: dd.getTime() };
-  }
-  const dm = (y, M) => new Date(Date.UTC(y, M, 0)).getUTCDate(); // days in 1-indexed month M
-  const DAY = 86400000;
-
-  function calc() {
-    T.setErr("");
-    const b = parts($("#dob").value);
-    if (!b) { out.replaceChildren(); T.status("Enter a valid date of birth."); return; }
-    if (b.y < 1900) { T.setErr("Please enter a birth year from 1900 onwards."); out.replaceChildren(); return; }
-    const aStr = $("#asof").value;
-    let t = aStr ? parts(aStr) : null;
-    if (aStr && !t) { T.setErr("The 'age at' date is not valid."); out.replaceChildren(); return; }
-    if (!t) { const n = new Date(); t = { y: n.getFullYear(), m: n.getMonth() + 1, d: n.getDate() }; t.utc = Date.UTC(t.y, t.m - 1, t.d); }
-
-    if (t.utc < b.utc) { T.setErr("Date of birth cannot be after the 'age at' date."); out.replaceChildren(); return; }
-
-    let years = t.y - b.y, months = t.m - b.m, days = t.d - b.d;
-    if (days < 0) { months--; days += dm(t.y, t.m - 1); }
-    if (months < 0) { years--; months += 12; }
-    if (years < 0) { T.setErr("That date of birth is in the future."); out.replaceChildren(); return; }
-
-    const totalDays = Math.round((t.utc - b.utc) / DAY);
-    const totalWeeks = Math.floor(totalDays / 7);
-    const totalMonths = years * 12 + months;
-
-    let bd = Date.UTC(t.y, b.m - 1, Math.min(b.d, dm(t.y, b.m)));
-    if (bd <= t.utc) bd = Date.UTC(t.y + 1, b.m - 1, Math.min(b.d, dm(t.y + 1, b.m)));
-    const daysToBd = Math.round((bd - t.utc) / DAY);
-
-    const wd = new Date(b.utc).toLocaleDateString("en-US", { weekday: "long", timeZone: "UTC" });
-
-    const res = document.createElement("div");
-    res.className = "res";
-    res.innerHTML =
-      '<div class="stat-row">' +
-        '<div class="stat"><b>' + years + ' y</b><small>years</small></div>' +
-        '<div class="stat"><b>' + months + ' m</b><small>months</small></div>' +
-        '<div class="stat"><b>' + days + ' d</b><small>days</small></div>' +
-      '</div>' +
-      '<div class="res-line"><span>Total days</span><span>' + totalDays.toLocaleString() + '</span></div>' +
-      '<div class="res-line"><span>Total weeks</span><span>' + totalWeeks.toLocaleString() + '</span></div>' +
-      '<div class="res-line"><span>Total months</span><span>' + totalMonths.toLocaleString() + '</span></div>' +
-      '<div class="res-line"><span>Day of the week born</span><span>' + wd + '</span></div>' +
-      '<div class="res-line"><span>Next birthday in</span><span>' + daysToBd + ' day' + (daysToBd === 1 ? "" : "s") + '</span></div>';
-    out.replaceChildren(res);
-    T.status("Age: " + years + " years, " + months + " months, " + days + " days.");
-  }
-
-  function reset() { $("#dob").value = ""; $("#asof").value = ""; out.replaceChildren(); T.setErr(""); T.status(""); }
-
-  card.addEventListener("input", calc);
-  T.on($("#go"), "click", calc);
-  T.on($("#rst"), "click", reset);
+(function(){
+  const $=s=>document.querySelector(s);
+  const hadj=$('#hadj'), hadjv=$('#hadjv');
+  hadj.oninput=()=>{hadjv.textContent=hadj.value};
+  $('#goage').onclick=()=>{
+    const d=+$('#ad').value,m=+$('#am').value,y=+$('#ay').value;
+    if(!d||!m||!y)return;
+    const dob=new Date(y,m-1,d);
+    const asof=$('#aof').value?new Date($('#aof').value+'T00:00:00'):new Date();
+    // gregorian
+    let years=asof.getFullYear()-dob.getFullYear(), months=asof.getMonth()-dob.getMonth(), days=asof.getDate()-dob.getDate();
+    if(days<0){months--; days+=new Date(asof.getFullYear(),asof.getMonth(),0).getDate();}
+    if(months<0){years--; months+=12;}
+    $('#rage1').style.display='block';
+    $('#ageg').textContent=years+'y '+months+'m '+days+'d';
+    const diff=asof-dob;
+    const totalDays=Math.floor(diff/86400000);
+    $('#ageg2').textContent = `Total months ~${Math.round(totalDays/30.44)} • Weeks ${Math.floor(totalDays/7)} • Days ${totalDays} • Hours ${Math.floor(diff/3600000)}`;
+    $('#ageg3').textContent = dob.toLocaleDateString('en-US',{weekday:'long'});
+    let nb = new Date(asof.getFullYear(),dob.getMonth(),dob.getDate());
+    if(nb < new Date(asof.toDateString())) nb.setFullYear(asof.getFullYear()+1);
+    $('#agenb').textContent = Math.ceil((nb - new Date(asof.toDateString()))/86400000);
+    // hijri
+    try {
+      const adj = parseInt(hadj.value||'0');
+      const fmt = new Intl.DateTimeFormat('en-u-ca-islamic-umalqura-nu-latn',{day:'numeric',month:'long',year:'numeric'});
+      $('#hijriDob').textContent = fmt.format(new Date(dob.getTime()+adj*86400000));
+      const fmt2 = new Intl.DateTimeFormat('en-u-ca-islamic-umalqura-nu-latn',{year:'numeric',month:'numeric'});
+      $('#hijriAge').textContent = years+' Hijri years (approx relative)';
+      $('#rage2').style.display='block';
+    }catch(e){}
+    // desi approx
+    $('#desiDob').textContent = 'Chet/Vaisakh approx (config based)';
+    $('#desiAge').textContent = years+' Desi years (approx)';
+    $('#rage3').style.display='block';
+  };
 })();

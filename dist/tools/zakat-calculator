@@ -3,23 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Zakat Calculator — Gold, Silver &amp; Nisab | Wafa Smart</title>
-<meta name="description" content="Free zakat calculator: total your wealth, compare with gold and silver nisab, and get 2.5% zakat. Metal rates load from a config file you can override.">
+<title>Zakat Calculator - Gold/Silver Nisab, 2.5% | Wafa Smart</title>
+<meta name="description" content="Zakat calculator with PKR, AED, SAR, USD, INR, GBP. Gold/silver nisab, hawl, deductions, jewellery toggle. Informational only.">
 <link rel="canonical" href="https://wafasmart.tech/tools/zakat-calculator">
 <link rel="alternate" hreflang="en" href="https://wafasmart.tech/tools/zakat-calculator"><link rel="alternate" hreflang="ur" href="https://wafasmart.tech/tools/zakat-calculator"><link rel="alternate" hreflang="x-default" href="https://wafasmart.tech/tools/zakat-calculator">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta property="og:type" content="website"><meta property="og:site_name" content="WAFA Smart Tech">
-<meta property="og:title" content="Zakat Calculator — Gold, Silver &amp; Nisab | Wafa Smart"><meta property="og:description" content="Free zakat calculator: total your wealth, compare with gold and silver nisab, and get 2.5% zakat. Metal rates load from a config file you can override.">
+<meta property="og:title" content="Zakat Calculator - Gold/Silver Nisab, 2.5% | Wafa Smart"><meta property="og:description" content="Zakat calculator with PKR, AED, SAR, USD, INR, GBP. Gold/silver nisab, hawl, deductions, jewellery toggle. Informational only.">
 <meta property="og:url" content="https://wafasmart.tech/tools/zakat-calculator"><meta property="og:image" content="https://wafasmart.tech/assets/img/og-cover.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Zakat Calculator — Gold, Silver &amp; Nisab | Wafa Smart"><meta name="twitter:description" content="Free zakat calculator: total your wealth, compare with gold and silver nisab, and get 2.5% zakat. Metal rates load from a config file you can override."><meta name="twitter:image" content="https://wafasmart.tech/assets/img/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Zakat Calculator - Gold/Silver Nisab, 2.5% | Wafa Smart"><meta name="twitter:description" content="Zakat calculator with PKR, AED, SAR, USD, INR, GBP. Gold/silver nisab, hawl, deductions, jewellery toggle. Informational only."><meta name="twitter:image" content="https://wafasmart.tech/assets/img/og-cover.jpg">
 <meta name="theme-color" content="#050d20"><meta name="format-detection" content="telephone=no">
 <meta name="author" content="WAFA Smart Tech, Lahore">
 <link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32"><link rel="icon" href="/assets/img/favicon-16.png" sizes="16x16">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png"><link rel="manifest" href="/manifest.webmanifest">
 <link rel="preload" href="/assets/css/styles.css" as="style"><link rel="stylesheet" href="/assets/css/styles.css">
-<link rel="stylesheet" href="/tools/assets/tools.css?v=1">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Zakat Calculator — WAFA Smart Tech","url":"https://wafasmart.tech/tools/zakat-calculator","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires a browser with JavaScript","inLanguage":["en","ur"],"isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"PKR"},"featureList":["Itemised wealth build-up: cash, savings, stock, gold, silver, receivables","Liabilities subtracted before the zakat base is measured","Gold priced per gram by 24K or 22K, silver per gram, all overridable","Both gold (87.48 g) and silver (612.36 g) nisab compared","Standard 2.5% zakat applied only once the threshold is cleared","Rates and currency load from a config file with a visible last-updated date"],"description":"Free zakat calculator: total your wealth, compare with gold and silver nisab, and get 2.5% zakat. Metal rates load from a config file you can override.","publisher":{"@type":"Organization","name":"WAFA Smart Tech","url":"https://wafasmart.tech"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is the nisab decided here?","acceptedAnswer":{"@type":"Answer","text":"Nisab equals the value of 87.48 grams of gold or 612.36 grams of silver. The tool values both at the rates you set and compares your net wealth against each, showing the lower silver-based threshold as the common reference."}},{"@type":"Question","name":"Why can I change the gold and silver rates?","acceptedAnswer":{"@type":"Answer","text":"Metal prices change constantly and differ by market, so the loaded defaults are indicative only — verify current rates before paying zakat. You can override them with the live rate from a jeweller or your currency's market quote."}},{"@type":"Question","name":"Is the zakat calculator free to use?","acceptedAnswer":{"@type":"Answer","text":"Yes — Zakat Calculator has no usage cap, no sign-up and no watermark, and it is not a trial: the page is a static file on https://wafasmart.tech with no billing backend behind it. "}},{"@type":"Question","name":"What does the 2.5% apply to?","acceptedAnswer":{"@type":"Answer","text":"Only the net zakat base — total zakatable assets minus liabilities — and only if that base meets or exceeds the nisab. Below nisab, zakat is not due."}},{"@type":"Question","name":"Does anything get uploaded when I use zakat calculator?","acceptedAnswer":{"@type":"Answer","text":"No. Zakat Calculator reads your asset and liability figures straight into page memory, works on it locally and hands the result back as a download — there is no upload request to intercept, store or leak, and no log of what you processed."}},{"@type":"Question","name":"Can I use it on my phone?","acceptedAnswer":{"@type":"Answer","text":"Yes. Zakat Calculator is mobile-first: one column, big tap targets, and the system keyboard opens with sensible number/text input. On iPhone, Files and the share sheet feed the picker the same way Downloads does on Android. The twelve fields stack into one column on a phone."}}]}</script>
+<link rel="stylesheet" href="/tools/assets/tools.css?v=2">
+<link rel="stylesheet" href="/tools/assets/tools-3d.css?v=1">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Zakat Calculator — WAFA Smart Tech","url":"https://wafasmart.tech/tools/zakat-calculator","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires a browser with JavaScript","inLanguage":["en","ur"],"isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"PKR"},"featureList":["Multi-currency","Gold/Silver nisab","Assets & deductions","Jewellery toggle","Breakdown","Hawl note"],"description":"Zakat calculator with PKR, AED, SAR, USD, INR, GBP. Gold/silver nisab, hawl, deductions, jewellery toggle. Informational only.","publisher":{"@type":"Organization","name":"WAFA Smart Tech","url":"https://wafasmart.tech"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is the zakat calculator free to use?","acceptedAnswer":{"@type":"Answer","text":"Yes — Zakat Calculator has no usage cap, no sign-up and no watermark, and it is not a trial: the page is a static file on https://wafasmart.tech with no billing backend behind it. "}},{"@type":"Question","name":"Does anything get uploaded when I use zakat calculator?","acceptedAnswer":{"@type":"Answer","text":"No. Zakat Calculator reads your calculator straight into page memory, works on it locally and hands the result back as a download — there is no upload request to intercept, store or leak, and no log of what you processed."}},{"@type":"Question","name":"Why default to silver nisab?","acceptedAnswer":{"@type":"Answer","text":"Silver nisab gives a lower threshold so more eligible pay Zakat; scholars differ - explain and allow choice."}},{"@type":"Question","name":"Is this fatwa?","acceptedAnswer":{"@type":"Answer","text":"Informational estimate only, consult qualified scholar."}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://wafasmart.tech/index.html"},{"@type":"ListItem","position":2,"name":"Free Tools","item":"https://wafasmart.tech/tools"},{"@type":"ListItem","position":3,"name":"Zakat Calculator","item":"https://wafasmart.tech/tools/zakat-calculator"}]}</script>
 
 </head>
@@ -33,54 +34,59 @@
 <div class="wrap"><nav class="bcrumbs" aria-label="Breadcrumb"><a href="/index.html">Home</a><span aria-hidden="true">›</span><a href="/tools/index.html">Free Tools</a><span aria-hidden="true">›</span><span>Zakat Calculator</span></nav></div>
 <div class="wrap tool-hero">
   <span class="eyebrow">Calculators · free · no upload</span>
-  <h1>Zakat Calculator — wealth, nisab and 2.5% due</h1>
-  <p class="sub">Add cash, savings, gold, silver, business stock and receivables, subtract liabilities, and check the 2.5% zakat against the gold and silver nisab thresholds.</p>
+  <h1>Zakat Calculator - Nisab, Assets &amp; Liabilities</h1>
+  <p class="sub">Calculate Zakat on cash, gold, silver, business, investments with nisab (gold/silver).</p>
   <p class="privacy"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5.5V11c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5.5Z"/><path d="m9 12 2 2 4-4"/></svg> Your files never leave your device — everything runs locally in your browser.</p>
 </div>
 <div class="wrap" role="region" aria-label="Zakat Calculator tool">
-<section class="t-card opts" aria-label="Zakat calculator inputs">
-  <div class="fld"><label for="cur">Currency</label><input type="text" id="cur" value="PKR" maxlength="3" autocomplete="off" spellcheck="false"></div>
-  <div class="fld"><label for="karat">Gold karat</label><select id="karat"><option value="24" selected>24K</option><option value="22">22K</option></select></div>
-  <div class="fld"><label for="g24">Gold 24K rate / gram</label><input type="number" id="g24" inputmode="decimal" min="0" step="any"></div>
-  <div class="fld"><label for="g22">Gold 22K rate / gram</label><input type="number" id="g22" inputmode="decimal" min="0" step="any"></div>
-  <div class="fld"><label for="srate">Silver rate / gram</label><input type="number" id="srate" inputmode="decimal" min="0" step="any"></div>
-  <div class="fld"><label for="cash">Cash in hand</label><input type="number" id="cash" inputmode="decimal" min="0" step="any" value="0"></div>
-  <div class="fld"><label for="bank">Bank savings</label><input type="number" id="bank" inputmode="decimal" min="0" step="any" value="0"></div>
-  <div class="fld"><label for="stock">Business inventory</label><input type="number" id="stock" inputmode="decimal" min="0" step="any" value="0"></div>
-  <div class="fld"><label for="recv">Receivables</label><input type="number" id="recv" inputmode="decimal" min="0" step="any" value="0"></div>
-  <div class="fld"><label for="goldg">Gold (grams)</label><input type="number" id="goldg" inputmode="decimal" min="0" step="any" value="0"></div>
-  <div class="fld"><label for="silverg">Silver (grams)</label><input type="number" id="silverg" inputmode="decimal" min="0" step="any" value="0"></div>
-  <div class="fld"><label for="debt">Liabilities (owed)</label><input type="number" id="debt" inputmode="decimal" min="0" step="any" value="0"></div>
-  <div class="acts"><button id="go" class="btn" type="button">Calculate</button><button id="rst" class="btn btn-ghost" type="button">Reset</button></div>
-  <p id="status" role="status" aria-live="polite" class="hint"></p>
-  <p id="err" class="err" role="alert" hidden></p>
-  <div id="out"></div>
-  <span class="disc">Zakat rates and thresholds are indicative — verify current gold/silver rates with your local market or scholar before paying.</span>
-</section>
+<section class="t-card t3d-panel"><div class="t3d-persp" style="padding:clamp(16px,3vw,26px)">
+<div class="gym-grid">
+<div class="fld"><label>Currency</label><select id="zc"><option>PKR</option><option>AED</option><option>SAR</option><option>USD</option><option>INR</option><option>GBP</option></select></div>
+<div class="fld"><label>Nisab</label><select id="znis"><option value="silver">Silver (default)</option><option value="gold">Gold</option></select></div>
+<div class="fld"><label>Gold price / tola</label><input id="zg" type="number" value="250000"></div>
+<div class="fld"><label>Silver price / tola</label><input id="zs" type="number" value="3000"></div>
+</div>
+<h3>Assets</h3>
+<div class="gym-grid">
+<div class="fld"><label>Cash in hand/bank</label><input id="za1" type="number" value="0"></div>
+<div class="fld"><label>Gold (grams)</label><input id="za2" type="number" value="0"></div>
+<div class="fld"><label>Silver (grams)</label><input id="za3" type="number" value="0"></div>
+<div class="fld"><label>Business inventory</label><input id="za4" type="number" value="0"></div>
+<div class="fld"><label>Receivables (money owed to me)</label><input id="za5" type="number" value="0"></div>
+<div class="fld"><label>Investments/Shares</label><input id="za6" type="number" value="0"></div>
+<div class="fld"><label>Other</label><input id="za7" type="number" value="0"></div>
+<div class="fld"><label><input type="checkbox" id="zj" style="width:auto"> Include personal-use jewellery (scholars differ)</label></div>
+</div>
+<h3>Deductions</h3>
+<div class="gym-grid">
+<div class="fld"><label>Immediate debts/liabilities</label><input id="zd1" type="number" value="0"></div>
+</div>
+<div class="acts"><button id="goz" class="t3d-btn">Calculate Zakat</button></div>
+<div id="rz" class="t3d-res" style="display:none"><div class="res-line"><span>Nisab value</span><b id="znisv">0</b></div><div class="res-line"><span>Net zakatable</span><b id="znet">0</b></div><div class="res-line"><span>Zakat due (2.5%)</span><b id="zz">0</b></div><p id="zmsg"></p><p class="disc">Informational estimate, consult qualified scholar. Hawl (lunar year) rule applies.</p></div>
+<p class="disc">Last updated: 2026-10-28</p>
+</div></section>
 </div>
 <div class="wrap">
 <section class="t-docs">
 <div class="t-hero-img"><img src="/tools/assets/img/tool-calc.jpg" alt="Zakat Calculator - 3D animated tool interface" loading="lazy" decoding="async"></div>
 <h2 id="about">What this tool does</h2>
-<p>Zakat becomes obligatory once your saved wealth — cash, bank balances, trade goods, gold and silver, and money owed to you, minus what you owe — stays above a minimum threshold called the nisab for a full lunar year. This calculator walks through exactly that: you list each asset, subtract liabilities, and it totals the zakat base, then applies the standard 2.5% rate to whatever clears the threshold. Nothing is transmitted; the maths is all in your browser.</p>
-<p>Gold and silver need a price per gram to be worth anything in the nisab test, and those rates move daily. Rather than bake in a number that quietly goes stale, the page loads current indicative rates from a small configuration file the moment it opens, prints the date those rates were last updated, and lets you type over any of them so you can match today's market or a specific jeweller's quote. If the fetch ever fails, it falls back to safe built-in defaults and tells you so.</p>
-<p>The nisab itself has two recognised measures: 87.48 grams of gold or 612.36 grams of silver. Many scholars use the lower silver threshold because it is more generous to recipients, so both are computed and shown, with your wealth compared against each. Once you see which nisab you clear and the resulting 2.5% figure, zakat becomes a concrete rupee amount rather than an estimate you hope is right.</p>
+<p>Calculate Zakat at 2.5% if net zakatable wealth &gt;= nisab for one lunar year (hawl).</p>
+<p>Default to silver nisab with explanation.</p>
+<p>Informational estimate - consult qualified scholar.</p>
 <h2 id="how-to-use">How to use the Zakat Calculator <span style="color:var(--cy)">| Step by Step Guide</span></h2>
-<div class="howto"><ol><li><span>Review the loaded gold and silver rates (or type today's rates to override them) and choose 24K or 22K for your gold.</span></li><li><span>Enter cash in hand, bank savings, business inventory value and receivables you expect to collect.</span></li><li><span>Enter the grams of gold and of silver you own.</span></li><li><span>Subtract liabilities such as debts you must repay soon.</span></li><li><span>Press Calculate to see your nisab comparison and the 2.5% zakat due.</span></li></ol></div>
-<span class="ru" data-ru lang="ros">Apna naqad, bank bachat, karobar ka maal, udhaar, sona (grams) aur chandi (grams) likhein, zimmedariyan (liabilities) minus karein. Sone/chandi ka rate zaroorat par khud badal lein. 'Calculate' dabane par nisab ka muwazna aur 2.5% zakat nazar aayega.</span>
+<div class="howto"><ol><li><span>Select currency &amp; rates</span></li><li><span>Enter assets</span></li><li><span>Enter debts/liabilities</span></li><li><span>Choose nisab</span></li><li><span>Calculate</span></li></ol></div>
+<span class="ru" data-ru lang="ros">Zakat ka hisab lagain - sona, chandi, cash, qarz waghera se. 2.5% hisab se.</span>
 <h2 id="features">Features</h2>
-<ul class="feat-list"><li>Itemised wealth build-up: cash, savings, stock, gold, silver, receivables</li><li>Liabilities subtracted before the zakat base is measured</li><li>Gold priced per gram by 24K or 22K, silver per gram, all overridable</li><li>Both gold (87.48 g) and silver (612.36 g) nisab compared</li><li>Standard 2.5% zakat applied only once the threshold is cleared</li><li>Rates and currency load from a config file with a visible last-updated date</li></ul>
+<ul class="feat-list"><li>Multi-currency</li><li>Gold/Silver nisab</li><li>Assets &amp; deductions</li><li>Jewellery toggle</li><li>Breakdown</li><li>Hawl note</li></ul>
 <h2 id="tips">Tips</h2>
-<ul><li>Update the metal rates on the day you actually pay, not when you first opened the page.</li><li>Use the silver nisab if you follow scholars who prefer the lower, more inclusive threshold.</li><li>Count gold by weight at your karat rate; jewellery for wearing has separate fiqh opinions.</li><li>Receivables are usually zakat-liable only when reasonably collectable — exclude doubtful debts.</li><li>This is an aid to your own calculation; confirm anything unusual with a knowledgeable scholar.</li></ul>
+<ul><li>Use current rates</li><li>Default silver nisab often lower threshold</li></ul>
 <h2 id="faq">Frequently asked questions</h2>
-<details><summary>How is the nisab decided here?</summary><p>Nisab equals the value of 87.48 grams of gold or 612.36 grams of silver. The tool values both at the rates you set and compares your net wealth against each, showing the lower silver-based threshold as the common reference.</p></details>
-<details><summary>Why can I change the gold and silver rates?</summary><p>Metal prices change constantly and differ by market, so the loaded defaults are indicative only — verify current rates before paying zakat. You can override them with the live rate from a jeweller or your currency's market quote.</p></details>
 <details><summary>Is the zakat calculator free to use?</summary><p>Yes — Zakat Calculator has no usage cap, no sign-up and no watermark, and it is not a trial: the page is a static file on https://wafasmart.tech with no billing backend behind it. </p></details>
-<details><summary>What does the 2.5% apply to?</summary><p>Only the net zakat base — total zakatable assets minus liabilities — and only if that base meets or exceeds the nisab. Below nisab, zakat is not due.</p></details>
-<details><summary>Does anything get uploaded when I use zakat calculator?</summary><p>No. Zakat Calculator reads your asset and liability figures straight into page memory, works on it locally and hands the result back as a download — there is no upload request to intercept, store or leak, and no log of what you processed.</p></details>
-<details><summary>Can I use it on my phone?</summary><p>Yes. Zakat Calculator is mobile-first: one column, big tap targets, and the system keyboard opens with sensible number/text input. On iPhone, Files and the share sheet feed the picker the same way Downloads does on Android. The twelve fields stack into one column on a phone.</p></details>
+<details><summary>Does anything get uploaded when I use zakat calculator?</summary><p>No. Zakat Calculator reads your calculator straight into page memory, works on it locally and hands the result back as a download — there is no upload request to intercept, store or leak, and no log of what you processed.</p></details>
+<details><summary>Why default to silver nisab?</summary><p>Silver nisab gives a lower threshold so more eligible pay Zakat; scholars differ - explain and allow choice.</p></details>
+<details><summary>Is this fatwa?</summary><p>Informational estimate only, consult qualified scholar.</p></details>
 <h2 id="related">Related tools <span style="color:var(--cy)">— Try more free tools</span></h2>
-<div class="related-grid"><a class="rel-card" href="/tools/pakistan-salary-tax-calculator.html"><span class="rel-ic">⚡</span><span><b>Salary tax</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/uae-vat-calculator.html"><span class="rel-ic">⚡</span><span><b>VAT maths</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/discount-calculator.html"><span class="rel-ic">⚡</span><span><b>Percentages &amp; money</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/percentage-calculator.html"><span class="rel-ic">⚡</span><span><b>Percentage calculator</b><small>Open this 3D animated tool</small></span></a></div>
+<div class="related-grid"><a class="rel-card" href="/tools/khums-calculator.html"><span class="rel-ic">⚡</span><span><b>Khums Calculator</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/age-calculator.html"><span class="rel-ic">⚡</span><span><b>Age Calculator</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/gym-calculator.html"><span class="rel-ic">⚡</span><span><b>Gym Calculator</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/percentage-calculator.html"><span class="rel-ic">⚡</span><span><b>Percentage Calculator</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/emi-loan-calculator.html"><span class="rel-ic">⚡</span><span><b>EMI Calculator</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/discount-calculator.html"><span class="rel-ic">⚡</span><span><b>Discount Calculator</b><small>Open this 3D animated tool</small></span></a></div>
 <p class="privacy"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5.5V11c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5.5Z"/><path d="m9 12 2 2 4-4"/></svg> Your files never leave your device — everything runs locally in your browser.</p>
 </section>
 </div>
@@ -92,7 +98,7 @@
   <div class="pill-row"><span class="pill pill-free"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.6 16.2 5.4 12l-1.4 1.4 5.6 5.6L20.1 8.4 18.7 7Z"/></svg> <span data-i18n="badge.domain">Domain FREE on sites</span></span><span class="pill pill-demo"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l1.8 5.6L19.5 9 13.8 10.8 12 16.5 10.2 10.8 4.5 9l5.7-1.4ZM19 14l.9 2.6 2.6.9-2.6.9L19 21l-.9-2.6-2.6-.9 2.6-.9ZM5 15l.7 2 2 .7-2 .7L5 20.5l-.7-2.1-2-.7 2-.7Z"/></svg> <span data-i18n="badge.demos">3 Demo Designs</span></span></div></div>
   <div><h4 data-i18n="nav.services">Services</h4><ul><li><a href="/ai-agents.html" data-ur="اے آئی ایجنٹس اور آٹومیشن">AI Agents &amp; Automation</a></li><li><a href="/voice-agents.html" data-ur="وائس اے آئی ایجنٹس">Voice AI Agents</a></li><li><a href="/ai-receptionist.html" data-ur="اے آئی ریسیپشنسٹ">AI Receptionist</a></li><li><a href="/website-design.html" data-ur="بزنس ویب سائٹ (تھری ڈی · ایس او)">Business Website (3D · SEO)</a></li><li><a href="/travel-agency.html" data-ur="ٹریول ایجنسی ویب سائٹ اور بکنگ">Travel Agency Website &amp; Booking</a></li><li><a href="/hotel-website.html" data-ur="ہوٹل اور ریزارٹ ویب سائٹ">Hotel &amp; Resort Website (Booking)</a></li><li><a href="/school-website.html" data-ur="سکول ویب سائٹ اور ایڈمیشن پورٹل">School Website &amp; Admission Portal</a></li><li><a href="/hospital-website.html" data-ur="ہسپتال اور کلینک ویب سائٹ + او پی ڈی">Hospital &amp; Clinic Website + OPD</a></li><li><a class="rec-link" href="/recovery.html">Hacked? Emergency recovery</a></li><li><a href="/services.html">+ 13 more build services →</a></li></ul></div>
   <div><h4>Company</h4><ul>
-    <li><a href="/about.html" data-i18n="nav.about">About</a></li><li><a href="/pricing.html" data-i18n="nav.pricing">Pricing</a></li><li><a href="/portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li><li><a href="/blog.html" data-i18n="nav.blog">Blog</a></li><li><a href="/tools/index.html">Free Tools</a></li><li><a href="/tools/index.html">Free Tools</a></li><li><a href="/contact.html" data-i18n="nav.contact">Contact</a></li><li><a href="/admin.html">Admin panel</a></li></ul></div>
+    <li><a href="/about.html" data-i18n="nav.about">About</a></li><li><a href="/pricing.html" data-i18n="nav.pricing">Pricing</a></li><li><a href="/portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li><li><a href="/blog.html" data-i18n="nav.blog">Blog</a></li><li><a href="/tools/index.html">Free Tools</a></li><li><a href="/tools/index.html">Free Tools</a></li><li><a href="/tools/index.html">Free Tools</a></li><li><a href="/contact.html" data-i18n="nav.contact">Contact</a></li><li><a href="/admin.html">Admin panel</a></li></ul></div>
   <div><h4 data-i18n="nav.contact">Contact</h4><ul>
     <li><a href="https://wa.me/923246627054?text=Assalam%20o%20Alaikum!"><b><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 13.7c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.5-2.6-1.1-4.3-3.7-4.5-3.9-.1-.2-1.1-1.4-1.1-2.7s.7-1.9.9-2.1c.2-.3.5-.3.7-.3h.5c.2 0 .4-.1.6.4l.9 2c.1.2.1.4 0 .6l-.4.5c-.1.2-.3.3-.1.6.1.3.6 1.1 1.4 1.8 1 .9 1.8 1.1 2 1.2.3.1.4.1.6-.1l.8-.9c.2-.2.4-.2.6-.1l2 .9c.2.1.4.2.4.3.1.1.1.5 0 1Z"/></svg></b> <span class="ltr" data-wk="contact.whatsappDisplay">0324 6627054</span> <span class="tiny muted" data-wk="contact.hours">Mon – Sat · 10:00 AM – 8:00 PM (PKT)</span></a></li>
     <li><a href="tel:+923246627054"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1Z"/></svg> <span class="ltr" data-wk="contact.phoneRaw">+92 324 6627054</span></a></li>
@@ -107,5 +113,6 @@
 </div></footer>
 <script src="/assets/js/main.js" defer></script>
 <script src="/tools/assets/tools.js?v=1" defer></script>
+<script src="/tools/assets/tools-3d.js?v=1" defer></script>
 <script src="/tools/assets/t/zakat-calculator.js?v=1" defer></script>
 </body></html>
