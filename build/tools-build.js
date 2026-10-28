@@ -78,7 +78,8 @@ function metaHead({ title, desc, canonical, page, ogType = "website" }) {
 <link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32"><link rel="icon" href="/assets/img/favicon-16.png" sizes="16x16">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png"><link rel="manifest" href="/manifest.webmanifest">
 <link rel="preload" href="/assets/css/styles.css" as="style"><link rel="stylesheet" href="/assets/css/styles.css">
-<link rel="stylesheet" href="/tools/assets/tools.css?v=1">`;
+<link rel="stylesheet" href="/tools/assets/tools.css?v=2">
+<link rel="stylesheet" href="/tools/assets/tools-3d.css?v=1">`;
 }
 
 const ldWebApp = t => ({ "@context": "https://schema.org", "@type": "WebApplication", name: t.name + " — " + BRAND.name,
@@ -147,6 +148,7 @@ ${libCfg}
 ${L.foot}
 <script src="/assets/js/main.js" defer></script>
 <script src="/tools/assets/tools.js?v=1" defer></script>
+<script src="/tools/assets/tools-3d.js?v=1" defer></script>
 ${t.built ? `<script src="/tools/assets/t/${t.slug}.js?v=1" defer></script>` : ""}
 </body></html>
 `;
@@ -185,13 +187,14 @@ function blurbOf(t) {
 function hubPage(L) {
   const byCat = {};
   TOOLS.forEach(t => (byCat[t.cat] = byCat[t.cat] || []).push(t));
+  const ACC = {image:'var(--t3d-gold)',pdf:'var(--t3d-blue)',calc:'var(--t3d-purple)',text:'var(--t3d-cyan)'};
   const cards = cat => byCat[cat].map(t => {
     const ic = `<svg viewBox="0 0 24 24" aria-hidden="true">${ICONS[t.cat] || ICONS.def}</svg>`;
     return t.built
-      ? `<a class="tool-card" href="/tools/${t.slug}.html" data-search="${esc((t.name + " " + (t.kw || []).join(" ")).toLowerCase())}"><span class="tic">${ic}</span><span><b>${esc(t.name)}</b><small>${esc(CARD_BLURB[t.slug] || blurbOf(t))}</small></span></a>`
-      : `<span class="tool-card soon" aria-disabled="true"><span class="tic">${ic}</span><span><b>${esc(t.name)}</b><small>Coming in the next build batch</small></span><span class="badge-soon">soon</span></span>`;
+      ? `<a class="t3d-card" style="--t3d-acc:${ACC[cat]||'var(--t3d-gold)'}" href="/tools/${t.slug}" data-search="${esc((t.name + " " + (t.kw || []).join(" ")).toLowerCase())}"><span class="t3d-ic">${ic}</span><span class="t3d-txt"><b>${esc(t.name)}</b><small>${esc(CARD_BLURB[t.slug] || blurbOf(t))}</small></span></a>`
+      : `<span class="t3d-card" style="--t3d-acc:${ACC[cat]||'var(--t3d-gold)'};opacity:.6" aria-disabled="true"><span class="t3d-ic">${ic}</span><span class="t3d-txt"><b>${esc(t.name)}</b><small>Coming soon</small></span></span>`;
   }).join("\n");
-  const secs = Object.keys(CATS).map(c => `<section data-cat="${c}"><h2 class="cat-h2">${esc(CATS[c])}</h2><div class="tool-grid">${cards(c)}</div></section>`).join("\n");
+  const secs = Object.keys(CATS).map(c => `<section data-cat="${c}"><h2 class="cat-h2">${esc(CATS[c])}</h2><div class="t3d-persp"><div class="t3d-hub-grid">${cards(c)}</div></div></section>`).join("\n");
   const body = `${L.env}${L.hdr}<main id="main" class="tools-main">
 <div class="wrap"><nav class="bcrumbs" aria-label="Breadcrumb"><a href="/index.html">Home</a><span aria-hidden="true">›</span><span>Free Tools</span></nav></div>
 <div class="wrap tool-hero">
@@ -217,6 +220,7 @@ ${ldScripts([ldCrumb(null, "index"), toolListLd])}
 ${L.foot}
 <script src="/assets/js/main.js" defer></script>
 <script src="/tools/assets/tools.js?v=1" defer></script>
+<script src="/tools/assets/tools-3d.js?v=1" defer></script>
 </body></html>
 `;
 }

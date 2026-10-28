@@ -1,0 +1,36 @@
+/* WAFA Smart Tech Tools 3D Design System */
+:root{
+  --t3d-gold:#ffc83d; --t3d-blue:#2f6bff; --t3d-cyan:#22d3ee; --t3d-green:#25d366; --t3d-purple:#a78bfa; --t3d-red:#ff4d5e;
+  --t3d-bg:#050d20; --t3d-panel:#0b122b;
+}
+html[data-page^="tools/"] body{background:radial-gradient(1200px 800px at 50% -10%,rgba(47,107,255,.16),transparent 60%),radial-gradient(900px 700px at 80% 10%,rgba(255,200,61,.12),transparent 55%),var(--t3d-bg);overflow-x:hidden}
+html[data-page^="tools/"] body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-2;background-image:linear-gradient(rgba(255,255,255,.03)1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03)1px,transparent 1px);background-size:90px 90px;opacity:.22;transform:perspective(1400px) rotateX(58deg) translateY(-18%);animation:t3d-grid 32s linear infinite}
+html[data-page^="tools/"] body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(700px 420px at 15% 15%,rgba(255,200,61,.09),transparent 70%),radial-gradient(600px 380px at 85% 25%,rgba(47,107,255,.12),transparent 72%);animation:t3d-orb 14s ease-in-out infinite}
+@keyframes t3d-grid{0%{background-position:0 0,0 0}100%{background-position:0 180px,180px 0}}
+@keyframes t3d-orb{0%,100%{opacity:.65}50%{opacity:1}}
+@keyframes t3d-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes t3d-rise{from{opacity:0;transform:translateY(16px) rotateX(6deg)}to{opacity:1;transform:translateY(0) rotateX(0)}}
+.t3d-persp{perspective:1600px;transform-style:preserve-3d}
+.t3d-hub-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:18px}
+.t3d-card{position:relative;display:flex;gap:14px;align-items:flex-start;padding:18px 20px;text-decoration:none;color:#eaf0ff;border-radius:22px;transform-style:preserve-3d;transition:transform .25s ease,box-shadow .25s ease;will-change:transform}
+.t3d-card::before,.t3d-card::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none}
+.t3d-card::before{background:linear-gradient(165deg,rgba(30,40,84,.98),rgba(9,14,34,.98));border:1px solid rgba(255,200,61,.28);box-shadow:0 40px 70px rgba(2,6,18,.58),0 8px 0 rgba(2,6,18,.92),inset 0 1px 0 rgba(255,255,255,.1);transform:translateZ(12px)}
+.t3d-card::after{background:linear-gradient(90deg,var(--t3d-acc,rgba(255,200,61,.9)),transparent 70%);mix-blend-mode:screen;opacity:.22;transform:translateZ(6px)}
+.t3d-card>*{position:relative;z-index:2;transform:translateZ(26px)}
+.t3d-card .t3d-ic{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.28),transparent 70%),linear-gradient(135deg,rgba(255,200,61,.5),rgba(47,107,255,.38));box-shadow:0 18px 40px rgba(244,196,48,.24),inset 0 1px 0 rgba(255,255,255,.28);animation:t3d-float 6s ease-in-out infinite}
+.t3d-card .t3d-ic svg{width:30px;height:30px}
+.t3d-card .t3d-txt b{display:block;font-size:1rem;letter-spacing:-.01em}
+.t3d-card .t3d-txt small{display:block;color:#aab8e6;margin-top:4px}
+.t3d-card.is-idle{animation:t3d-rise .8s ease both}
+.t3d-panel{position:relative;border-radius:26px;transform-style:preserve-3d}
+.t3d-panel::before{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(165deg,rgba(30,40,84,.98),rgba(9,14,34,.98));border:1px solid rgba(255,200,61,.26);box-shadow:0 44px 80px rgba(2,6,18,.6),0 10px 0 rgba(2,6,18,.92),inset 0 1px 0 rgba(255,255,255,.1);transform:translateZ(14px)}
+.t3d-panel>*{position:relative;z-index:2;transform:translateZ(30px)}
+.t3d-btn{position:relative;display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;border:0;background:var(--grad);color:#1a1200;font-weight:800;box-shadow:0 18px 40px rgba(244,196,48,.26),0 6px 0 rgba(120,84,0,.92);transition:transform .18s ease,box-shadow .18s ease}
+.t3d-btn:active{transform:translateY(3px);box-shadow:0 12px 26px rgba(244,196,48,.22),0 3px 0 rgba(120,84,0,.92)}
+.t3d-res{position:relative;padding:16px 18px;border-radius:18px;text-align:center}
+.t3d-res::before{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(160deg,rgba(37,211,102,.18),rgba(9,14,34,.96));border:1px solid rgba(37,211,102,.38);box-shadow:0 26px 60px rgba(37,211,102,.16),0 4px 0 rgba(2,6,18,.9);transform:translateZ(10px)}
+.t3d-res>*{position:relative;z-index:2;transform:translateZ(22px)}
+.t3d-res b{font-size:clamp(1.8rem,6vw,3rem);display:block}
+.t3d-count{animation:t3d-rise .6s ease both}
+@media(max-width:680px){.t3d-card::before{box-shadow:0 26px 50px rgba(2,6,18,.56),0 6px 0 rgba(2,6,18,.9)} .t3d-card:hover{transform:none} .t3d-card:active{transform:translateY(4px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important} .t3d-card,.t3d-panel{transform:none!important}}
