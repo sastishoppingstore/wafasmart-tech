@@ -63,23 +63,22 @@
 <section class="t-docs">
 <div class="t-hero-img"><img src="/tools/assets/img/tool-calc.jpg" alt="Khums Calculator - 3D animated tool interface" loading="lazy" decoding="async"></div>
 <h2 id="about">What this tool does</h2>
-<p>Compute Khums as 20% of surplus (income + eligible - necessary expenses). Split into Sahm-e-Imam (50%) and Sahm-e-Sadat (50%).</p>
-<p>Rulings differ between Maraji' - follow your own Marja. This is an estimate, not a fatwa.</p>
+<div class="t3d-textbox"><p>Compute Khums as 20% of surplus (income + eligible - necessary expenses). Split into Sahm-e-Imam (50%) and Sahm-e-Sadat (50%).</p><p>Rulings differ between Maraji' - follow your own Marja. This is an estimate, not a fatwa.</p></div>
 <h2 id="how-to-use">How to use the Khums Calculator <span style="color:var(--cy)">| Step by Step Guide</span></h2>
 <div class="howto"><ol><li><span>Set khums year (ras-ul-sal) if desired</span></li><li><span>Enter income/profit</span></li><li><span>Enter necessary expenses &amp; debts</span></li><li><span>Calculate</span></li></ol></div>
-<span class="ru" data-ru lang="ros">Khums ka hisab - mawaid se zaroori kharchat kam karke 20% nikalain, aadha Imam (as) ke liye aadha Sadat ke liye.</span>
+<div class="t3d-textbox ru" data-ru lang="ros"><p>Khums ka hisab - mawaid se zaroori kharchat kam karke 20% nikalain, aadha Imam (as) ke liye aadha Sadat ke liye.</p></div>
 <h2 id="features">Features</h2>
-<ul class="feat-list"><li>20% on surplus</li><li>Sahm-e-Imam / Sahm-e-Sadat split</li><li>Expenses &amp; debts</li><li>Currency selector</li><li>Marja note</li></ul>
+<div class="t3d-textbox"><ul class="feat-list"><li>20% on surplus</li><li>Sahm-e-Imam / Sahm-e-Sadat split</li><li>Expenses &amp; debts</li><li>Currency selector</li><li>Marja note</li></ul></div>
 <h2 id="tips">Tips</h2>
-<ul><li>Consult your Marja's office for details</li><li>Keep records of khums year</li></ul>
+<div class="t3d-textbox"><ul><li>Consult your Marja's office for details</li><li>Keep records of khums year</li></ul></div>
 <h2 id="faq">Frequently asked questions</h2>
-<details><summary>Is the khums calculator free to use?</summary><p>Yes — Khums Calculator has no usage cap, no sign-up and no watermark, and it is not a trial: the page is a static file on https://wafasmart.tech with no billing backend behind it. </p></details>
-<details><summary>Does anything get uploaded when I use khums calculator?</summary><p>No. Khums Calculator reads your calculator straight into page memory, works on it locally and hands the result back as a download — there is no upload request to intercept, store or leak, and no log of what you processed.</p></details>
-<details><summary>Is this a fatwa?</summary><p>No, estimate only. Follow your own Marja's rulings.</p></details>
-<details><summary>What is the split?</summary><p>Customarily 50% Sahm-e-Imam, 50% Sahm-e-Sadat.</p></details>
+<details><summary>Is the khums calculator free to use?</summary><div class="t3d-textbox"><p>Yes — Khums Calculator has no usage cap, no sign-up and no watermark, and it is not a trial: the page is a static file on https://wafasmart.tech with no billing backend behind it. </p></div></details>
+<details><summary>Does anything get uploaded when I use khums calculator?</summary><div class="t3d-textbox"><p>No. Khums Calculator reads your calculator straight into page memory, works on it locally and hands the result back as a download — there is no upload request to intercept, store or leak, and no log of what you processed.</p></div></details>
+<details><summary>Is this a fatwa?</summary><div class="t3d-textbox"><p>No, estimate only. Follow your own Marja's rulings.</p></div></details>
+<details><summary>What is the split?</summary><div class="t3d-textbox"><p>Customarily 50% Sahm-e-Imam, 50% Sahm-e-Sadat.</p></div></details>
 <h2 id="related">Related tools <span style="color:var(--cy)">— Try more free tools</span></h2>
 <div class="related-grid"><a class="rel-card" href="/tools/zakat-calculator.html"><span class="rel-ic">⚡</span><span><b>Zakat Calculator</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/gym-calculator.html"><span class="rel-ic">⚡</span><span><b>Gym Calculator</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/age-calculator.html"><span class="rel-ic">⚡</span><span><b>Age Calculator</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/emi-loan-calculator.html"><span class="rel-ic">⚡</span><span><b>EMI Calculator</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/percentage-calculator.html"><span class="rel-ic">⚡</span><span><b>Percentage Calculator</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/discount-calculator.html"><span class="rel-ic">⚡</span><span><b>Discount Calculator</b><small>Open this 3D animated tool</small></span></a></div>
-<p class="privacy"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5.5V11c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5.5Z"/><path d="m9 12 2 2 4-4"/></svg> Your files never leave your device — everything runs locally in your browser.</p>
+<div class="t3d-textbox"><p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5.5V11c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5.5Z"/><path d="m9 12 2 2 4-4"/></svg> Your files never leave your device — everything runs locally in your browser.</p></div>
 </section>
 </div>
 </main>

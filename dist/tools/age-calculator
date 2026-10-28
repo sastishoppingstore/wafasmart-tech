@@ -60,23 +60,22 @@
 <section class="t-docs">
 <div class="t-hero-img"><img src="/tools/assets/img/tool-calc.jpg" alt="Age Calculator - 3D animated tool interface" loading="lazy" decoding="async"></div>
 <h2 id="about">What this tool does</h2>
-<p>Get exact age in three calendars: English (Gregorian), Islamic (Hijri) using Intl islamic-umalqura with ±2 day adjustment (moon sighting differences), and Desi/Bikrami.</p>
-<p>Handles leap years, 29 Feb births correctly. Shows days until next birthday and more.</p>
+<div class="t3d-textbox"><p>Get exact age in three calendars: English (Gregorian), Islamic (Hijri) using Intl islamic-umalqura with ±2 day adjustment (moon sighting differences), and Desi/Bikrami.</p><p>Handles leap years, 29 Feb births correctly. Shows days until next birthday and more.</p></div>
 <h2 id="how-to-use">How to use the Age Calculator <span style="color:var(--cy)">| Step by Step Guide</span></h2>
 <div class="howto"><ol><li><span>Select DOB (day/month/year)</span></li><li><span>Optionally set 'age as of' date</span></li><li><span>Adjust Hijri days if needed</span></li><li><span>View all three results</span></li></ol></div>
-<span class="ru" data-ru lang="ros">Apni tarikh paidaish dalein aur Gregorian, Hijri aur Desi mein umar dekhein.</span>
+<div class="t3d-textbox ru" data-ru lang="ros"><p>Apni tarikh paidaish dalein aur Gregorian, Hijri aur Desi mein umar dekhein.</p></div>
 <h2 id="features">Features</h2>
-<ul class="feat-list"><li>Gregorian exact age</li><li>Hijri with ±2 day adjustment</li><li>Desi/Bikrami approximate</li><li>Days until birthday</li><li>Leap year handling</li></ul>
+<div class="t3d-textbox"><ul class="feat-list"><li>Gregorian exact age</li><li>Hijri with ±2 day adjustment</li><li>Desi/Bikrami approximate</li><li>Days until birthday</li><li>Leap year handling</li></ul></div>
 <h2 id="tips">Tips</h2>
-<ul><li>Use correct DOB</li><li>Hijri dates may differ by 1-2 days by region</li></ul>
+<div class="t3d-textbox"><ul><li>Use correct DOB</li><li>Hijri dates may differ by 1-2 days by region</li></ul></div>
 <h2 id="faq">Frequently asked questions</h2>
-<details><summary>Is the age calculator free to use?</summary><p>Yes — Age Calculator has no usage cap, no sign-up and no watermark, and it is not a trial: the page is a static file on https://wafasmart.tech with no billing backend behind it. </p></details>
-<details><summary>Does anything get uploaded when I use age calculator?</summary><p>No. Age Calculator reads your calculator straight into page memory, works on it locally and hands the result back as a download — there is no upload request to intercept, store or leak, and no log of what you processed.</p></details>
-<details><summary>Why Hijri adjustment?</summary><p>Different countries use different moon sighting; Um Al Qura is used as base with adjustment control.</p></details>
-<details><summary>Is Desi date exact?</summary><p>Desi/Bikrami month start dates are approximate and may differ by 1 day.</p></details>
+<details><summary>Is the age calculator free to use?</summary><div class="t3d-textbox"><p>Yes — Age Calculator has no usage cap, no sign-up and no watermark, and it is not a trial: the page is a static file on https://wafasmart.tech with no billing backend behind it. </p></div></details>
+<details><summary>Does anything get uploaded when I use age calculator?</summary><div class="t3d-textbox"><p>No. Age Calculator reads your calculator straight into page memory, works on it locally and hands the result back as a download — there is no upload request to intercept, store or leak, and no log of what you processed.</p></div></details>
+<details><summary>Why Hijri adjustment?</summary><div class="t3d-textbox"><p>Different countries use different moon sighting; Um Al Qura is used as base with adjustment control.</p></div></details>
+<details><summary>Is Desi date exact?</summary><div class="t3d-textbox"><p>Desi/Bikrami month start dates are approximate and may differ by 1 day.</p></div></details>
 <h2 id="related">Related tools <span style="color:var(--cy)">— Try more free tools</span></h2>
 <div class="related-grid"><a class="rel-card" href="/tools/gym-calculator.html"><span class="rel-ic">⚡</span><span><b>Gym Calculator</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/bmi-calculator.html"><span class="rel-ic">⚡</span><span><b>BMI Calculator</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/calorie-calculator.html"><span class="rel-ic">⚡</span><span><b>Calorie Calculator</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/zakat-calculator.html"><span class="rel-ic">⚡</span><span><b>Zakat Calculator</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/percentage-calculator.html"><span class="rel-ic">⚡</span><span><b>Percentage Calculator</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/discount-calculator.html"><span class="rel-ic">⚡</span><span><b>Discount Calculator</b><small>Open this 3D animated tool</small></span></a></div>
-<p class="privacy"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5.5V11c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5.5Z"/><path d="m9 12 2 2 4-4"/></svg> Your files never leave your device — everything runs locally in your browser.</p>
+<div class="t3d-textbox"><p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5.5V11c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5.5Z"/><path d="m9 12 2 2 4-4"/></svg> Your files never leave your device — everything runs locally in your browser.</p></div>
 </section>
 </div>
 </main>

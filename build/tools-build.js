@@ -101,19 +101,19 @@ function docsBlock(t) {
   return `<section class="t-docs">
 <div class="t-hero-img"><img src="/tools/assets/img/tool-${t.cat === 'pdf' ? 'pdf' : t.cat === 'calc' ? 'calc' : t.cat === 'text' ? 'text' : 'image-compress'}.jpg" alt="${esc(t.name)} - 3D animated tool interface" loading="lazy" decoding="async"></div>
 <h2 id="about">What this tool does</h2>
-${t.intro.map(p => `<p>${esc(p)}</p>`).join("\n")}
+<div class="t3d-textbox">${t.intro.map(p => `<p>${esc(p)}</p>`).join("")}</div>
 <h2 id="how-to-use">How to use the ${esc(t.name)} <span style="color:var(--cy)">| Step by Step Guide</span></h2>
 <div class="howto"><ol>${t.steps.map(s => `<li><span>${esc(s)}</span></li>`).join("")}</ol></div>
-<span class="ru" data-ru lang="ros">${esc(t.ur)}</span>
+<div class="t3d-textbox ru" data-ru lang="ros"><p>${esc(t.ur)}</p></div>
 <h2 id="features">Features</h2>
-<ul class="feat-list">${t.features.map(s => `<li>${esc(s)}</li>`).join("")}</ul>
+<div class="t3d-textbox"><ul class="feat-list">${t.features.map(s => `<li>${esc(s)}</li>`).join("")}</ul></div>
 <h2 id="tips">Tips</h2>
-<ul>${t.tips.map(s => `<li>${esc(s)}</li>`).join("")}</ul>
+<div class="t3d-textbox"><ul>${t.tips.map(s => `<li>${esc(s)}</li>`).join("")}</ul></div>
 <h2 id="faq">Frequently asked questions</h2>
-${t.faqs.map(f => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join("\n")}
+${t.faqs.map(f => `<details><summary>${esc(f.q)}</summary><div class="t3d-textbox"><p>${esc(f.a)}</p></div></details>`).join("\n")}
 <h2 id="related">Related tools <span style="color:var(--cy)">— Try more free tools</span></h2>
 <div class="related-grid">${t.related.map(([sl, lb]) => `<a class="rel-card" href="/tools/${sl === "index" ? "index.html" : sl + ".html"}"><span class="rel-ic">⚡</span><span><b>${esc(lb)}</b><small>Open this 3D animated tool</small></span></a>`).join("")}</div>
-${PRIVACY_SVG}
+<div class="t3d-textbox">${PRIVACY_SVG.replace('<p class="privacy">','<p>').replace('</p>','</p>')}</div>
 </section>`;
 }
 

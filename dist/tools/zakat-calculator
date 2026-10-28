@@ -70,24 +70,22 @@
 <section class="t-docs">
 <div class="t-hero-img"><img src="/tools/assets/img/tool-calc.jpg" alt="Zakat Calculator - 3D animated tool interface" loading="lazy" decoding="async"></div>
 <h2 id="about">What this tool does</h2>
-<p>Calculate Zakat at 2.5% if net zakatable wealth &gt;= nisab for one lunar year (hawl).</p>
-<p>Default to silver nisab with explanation.</p>
-<p>Informational estimate - consult qualified scholar.</p>
+<div class="t3d-textbox"><p>Calculate Zakat at 2.5% if net zakatable wealth &gt;= nisab for one lunar year (hawl).</p><p>Default to silver nisab with explanation.</p><p>Informational estimate - consult qualified scholar.</p></div>
 <h2 id="how-to-use">How to use the Zakat Calculator <span style="color:var(--cy)">| Step by Step Guide</span></h2>
 <div class="howto"><ol><li><span>Select currency &amp; rates</span></li><li><span>Enter assets</span></li><li><span>Enter debts/liabilities</span></li><li><span>Choose nisab</span></li><li><span>Calculate</span></li></ol></div>
-<span class="ru" data-ru lang="ros">Zakat ka hisab lagain - sona, chandi, cash, qarz waghera se. 2.5% hisab se.</span>
+<div class="t3d-textbox ru" data-ru lang="ros"><p>Zakat ka hisab lagain - sona, chandi, cash, qarz waghera se. 2.5% hisab se.</p></div>
 <h2 id="features">Features</h2>
-<ul class="feat-list"><li>Multi-currency</li><li>Gold/Silver nisab</li><li>Assets &amp; deductions</li><li>Jewellery toggle</li><li>Breakdown</li><li>Hawl note</li></ul>
+<div class="t3d-textbox"><ul class="feat-list"><li>Multi-currency</li><li>Gold/Silver nisab</li><li>Assets &amp; deductions</li><li>Jewellery toggle</li><li>Breakdown</li><li>Hawl note</li></ul></div>
 <h2 id="tips">Tips</h2>
-<ul><li>Use current rates</li><li>Default silver nisab often lower threshold</li></ul>
+<div class="t3d-textbox"><ul><li>Use current rates</li><li>Default silver nisab often lower threshold</li></ul></div>
 <h2 id="faq">Frequently asked questions</h2>
-<details><summary>Is the zakat calculator free to use?</summary><p>Yes — Zakat Calculator has no usage cap, no sign-up and no watermark, and it is not a trial: the page is a static file on https://wafasmart.tech with no billing backend behind it. </p></details>
-<details><summary>Does anything get uploaded when I use zakat calculator?</summary><p>No. Zakat Calculator reads your calculator straight into page memory, works on it locally and hands the result back as a download — there is no upload request to intercept, store or leak, and no log of what you processed.</p></details>
-<details><summary>Why default to silver nisab?</summary><p>Silver nisab gives a lower threshold so more eligible pay Zakat; scholars differ - explain and allow choice.</p></details>
-<details><summary>Is this fatwa?</summary><p>Informational estimate only, consult qualified scholar.</p></details>
+<details><summary>Is the zakat calculator free to use?</summary><div class="t3d-textbox"><p>Yes — Zakat Calculator has no usage cap, no sign-up and no watermark, and it is not a trial: the page is a static file on https://wafasmart.tech with no billing backend behind it. </p></div></details>
+<details><summary>Does anything get uploaded when I use zakat calculator?</summary><div class="t3d-textbox"><p>No. Zakat Calculator reads your calculator straight into page memory, works on it locally and hands the result back as a download — there is no upload request to intercept, store or leak, and no log of what you processed.</p></div></details>
+<details><summary>Why default to silver nisab?</summary><div class="t3d-textbox"><p>Silver nisab gives a lower threshold so more eligible pay Zakat; scholars differ - explain and allow choice.</p></div></details>
+<details><summary>Is this fatwa?</summary><div class="t3d-textbox"><p>Informational estimate only, consult qualified scholar.</p></div></details>
 <h2 id="related">Related tools <span style="color:var(--cy)">— Try more free tools</span></h2>
 <div class="related-grid"><a class="rel-card" href="/tools/khums-calculator.html"><span class="rel-ic">⚡</span><span><b>Khums Calculator</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/age-calculator.html"><span class="rel-ic">⚡</span><span><b>Age Calculator</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/gym-calculator.html"><span class="rel-ic">⚡</span><span><b>Gym Calculator</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/percentage-calculator.html"><span class="rel-ic">⚡</span><span><b>Percentage Calculator</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/emi-loan-calculator.html"><span class="rel-ic">⚡</span><span><b>EMI Calculator</b><small>Open this 3D animated tool</small></span></a><a class="rel-card" href="/tools/discount-calculator.html"><span class="rel-ic">⚡</span><span><b>Discount Calculator</b><small>Open this 3D animated tool</small></span></a></div>
-<p class="privacy"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5.5V11c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5.5Z"/><path d="m9 12 2 2 4-4"/></svg> Your files never leave your device — everything runs locally in your browser.</p>
+<div class="t3d-textbox"><p><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5.5V11c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5.5Z"/><path d="m9 12 2 2 4-4"/></svg> Your files never leave your device — everything runs locally in your browser.</p></div>
 </section>
 </div>
 </main>
